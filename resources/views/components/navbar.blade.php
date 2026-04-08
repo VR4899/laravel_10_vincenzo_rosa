@@ -32,9 +32,12 @@
      
 
       @auth
+      <li class="nav-item">
+                        <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
+                    </li>
       {{-- MESSAGGIO BENVENUTO ALL'UTENTE --}}
       <li class="nav-item">
-        <a class="nav-link" href="#">Benvenut* {{Auth::user()->name}}</a>
+        <a class="nav-link" href="#">Ciao, {{Auth::user()->name}}</a>
       </li>
 
       {{-- LOGOUT --}}
